@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/3cf5053bc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showXButton() {
+        document.getElementById("mobile-nav-toggle-x").style.display = "inline";
+        document.getElementById("mobile-nav-toggle").style.display = "none";
+      }
+      function showMenu() {
+        document.getElementById("mobile-nav-toggle").style.display = "inline";
+        document.getElementById("mobile-nav-toggle-x").style.display = "none";
+      }
+    </script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <button class="btn" type="button" id="mobile-nav-toggle">
+      <i onclick="showXButton()" class="fa-regular fa-bars"></i>
+    </button>
+    <button class="btn" type="button" id="mobile-nav-toggle-x">
+      <i onclick="showMenu()" class="fa-regular fa-x"></i>
+    </button>
+
+    <header id="header" class="header-scrolled">
+      <div class="container container-nav">
+        <div class="site-title">
+          <h1><span>K</span>urtd <span>D</span>aniel</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a class="nav-btns" href="">Home</a></li>
+            <li><a class="nav-btns" href="">Education</a></li>
+            <li><a class="nav-btns" href="">Awards</a></li>
+            <li><a class="nav-btns" href="">Friends</a></li>
+            <li><a class="nav-btns" href="">Interest</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-m"></div>
+    </main>
+
+    <footer>
+      <div class="container-f">
+        <nav>
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- <nav id="mobile-nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Awards</a></li>
+        <li><a href="">Friends</a></li>
+        <li><a href="">Interest</a></li>
+      </ul>
+    </nav> -->
+  </body>
+</html>
