@@ -1,0 +1,146 @@
+head{
+color:#143774;
+color:#1792d2;
+color:#f8f8f8;
+color:#707070;
+color:#8490ff;
+}
+
+/* Layout */
+body{
+    font-family: Ubuntu, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    background-color: #f8f8f8;
+    max-width: 100%;
+    padding: 0;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: .5em;
+}
+
+nav ul li{
+    padding: 0.75em;
+    margin: .5em;
+}
+
+.site-title{
+    display: flex;
+    align-items: center;
+}
+
+
+/* buttons */
+
+#mobile-nav-toggle{
+    display: none;
+    position: fixed;
+    top: 3.125em;
+    right: 1.5em;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#mobile-nav-toggle-x{
+    display: none;
+    position: fixed;
+    top: 3.2em;
+    right: 1.7em;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.fa-bars{
+    font-size: 1.5rem;
+    color: #707070;
+    font-weight: 800;
+}
+
+.fa-x{
+    font-size: 1.25rem;
+    color: #707070;
+}
+
+button a{
+    text-decoration: none;
+}
+
+/* footer */
+.container-f{
+    background-color: #143774;
+    margin: 0;
+}
+
+/* Typography */
+
+h1{
+    font-weight: 300;
+    font-family: Lora, serif;
+    font-size: 1.5rem;
+    color:#143774;
+    letter-spacing: .15em;
+    padding: .2em;
+    
+}
+
+
+.nav-btns{
+    font-size: 1rem;
+    color: #707070;
+    font-weight: 700;
+}
+
+.nav-btns:hover,
+.nav-btns:focus{
+    color: #1792d2;
+    transition: .5s;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: #1792d2 1px solid;
+    transition: .2s;
+}
+
+span{
+    color:rgba(255, 217, 0, 0.842);
+}
+
+
+/* Media Queries */
+
+
+
+@media (max-width:865px) {
+
+
+
+}
