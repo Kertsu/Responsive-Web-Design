@@ -37,7 +37,7 @@ nav ul{
     display: flex;
     list-style: none;
     padding: 0;
-    margin: .5em;
+    margin: .3em;
 }
 
 nav ul li{
@@ -140,7 +140,9 @@ span{
 
 
 @media (max-width:865px) {
-
+    nav {
+        display: none;
+    }
 
 
 }
