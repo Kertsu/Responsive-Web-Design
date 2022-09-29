@@ -13,20 +13,13 @@
     <title>Home Page</title>
   </head>
   <body>
-    <button class="btn" type="button" id="mobile-nav-toggle">
-      <i onclick="showXButton()" class="fa-regular fa-bars"></i>
-    </button>
-    <button class="btn" type="button" id="mobile-nav-toggle-x">
-      <i onclick="showMenu()" class="fa-regular fa-x"></i>
-    </button>
-
     <header id="header" class="header-scrolled">
       <div class="container container-nav">
         <div class="site-title">
           <h1><span>K</span>urtd <span>D</span>aniel</h1>
         </div>
         <nav>
-          <ul>
+          <ul class="nav-wide">
             <li><a class="nav-btns" href="">Home</a></li>
             <li><a class="nav-btns" href="">Education</a></li>
             <li><a class="nav-btns" href="">Awards</a></li>
@@ -40,6 +33,21 @@
     <main>
       <div class="container-m"></div>
     </main>
+    <button class="menu-btn btn-bars" onclick="showMenu()"><i id="menu-btn" class="fa-regular fa-bars"></i></button>
+    <button class="menu-btn btn-x" onclick="closeMenu()"><i id="x-btn" class="fa-regular fa-x"></i></button>
+ 
+    </a>
+    <div id="menu">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-ul">
+          <li><a class="mobile-nav-a" href="">Home</a></li>
+          <li><a class="mobile-nav-a" href="">Education</a></li>
+          <li><a class="mobile-nav-a" href="">Awards</a></li>
+          <li><a class="mobile-nav-a" href="">Friends</a></li>
+          <li><a class="mobile-nav-a" href="">Interest</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- <footer>
       <div class="container-f">
@@ -52,14 +60,5 @@
         </nav>
       </div>
     </footer> -->
-    <!-- <nav id="mobile-nav">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Awards</a></li>
-        <li><a href="">Friends</a></li>
-        <li><a href="">Interest</a></li>
-      </ul>
-    </nav> -->
   </body>
 </html>

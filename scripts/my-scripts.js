@@ -1,9 +1,8 @@
-
-// function showXButton() {
-//   document.getElementById("mobile-nav-toggle-x").style.display = "inline";
-//   document.getElementById("mobile-nav-toggle").style.display = "none";
-// }
-// function showMenu() {
-//   document.getElementById("mobile-nav-toggle").style.display = "inline";
-//   document.getElementById("mobile-nav-toggle-x").style.display = "none";
-// }
+function showMenu(){
+    document.getElementById("menu").style.width = "260px";
+    var element = document.getElementById("menu-btn");
+    element.classList.toggle("fa-x");
+}
+function closeMenu(){
+    document.getElementById("menu").style.width = "0";
+}

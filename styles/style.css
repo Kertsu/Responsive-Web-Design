@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
+    overflow-x: hidden;
 }
 
 .container{
@@ -33,14 +34,14 @@ header{
 }
 
 
-nav ul{
+.nav-wide{
     display: flex;
     list-style: none;
     padding: 0;
     margin: .3em;
 }
 
-nav ul li{
+.nav-wide li{
     padding: 0.75em;
     margin: .5em;
 }
@@ -51,39 +52,48 @@ nav ul li{
 }
 
 
+/* mobile nav */
+#menu{
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    opacity: .8;
+    overflow-x: hidden;
+    width: 0;
+    padding-top: 1px;
+    transition: .7s;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-nav-a{
+    color: white ;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    display: block;
+    font-weight: 400;
+    padding: 1.2em 0 1.2em 2em ;
+    text-decoration: none;
+    font-size: .8rem;
+    overflow: hidden;
+}
+
+
 /* buttons */
 
-#mobile-nav-toggle{
+.menu-btn{
     display: none;
-    position: fixed;
-    top: 3.125em;
-    right: 1.5em;
+    background:none;
     border: 0;
-    background: none;
     cursor: pointer;
-    transition: all .4s;
-}
-
-#mobile-nav-toggle-x{
-    display: none;
-    position: fixed;
-    top: 3.2em;
-    right: 1.7em;
-    border: 0;
-    background: none;
-    cursor: pointer;
-    transition: all .4s;
-}
-
-.fa-bars{
-    font-size: 1.5rem;
-    color: #707070;
-    font-weight: 800;
-}
-
-.fa-x{
-    font-size: 1.25rem;
-    color: #707070;
 }
 
 button a{
@@ -121,11 +131,11 @@ h1{
     transition: .5s;
 }
 
-a{
+.nav-btns{
     text-decoration: none;
 }
 
-a:hover{
+.nav-btns:hover{
     border-bottom: #1792d2 1px solid;
     transition: .2s;
 }
@@ -134,15 +144,30 @@ span{
     color:rgba(255, 217, 0, 0.842);
 }
 
+.fa-bars,
+.fa-x{
+    font-weight: 600;
+    font-size: 1.3rem;
+
+}
+
 
 /* Media Queries */
 
 
 
 @media (max-width:865px) {
-    nav {
+    .nav-wide {
         display: none;
     }
+
+    .btn-bars{
+        display: inline;
+        top: 25px;
+        position: fixed;
+        right: 25px;
+    }
+
 
 
 }
