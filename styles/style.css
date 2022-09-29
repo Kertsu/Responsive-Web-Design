@@ -13,6 +13,7 @@ body{
     padding: 0;
     background-color: white;
     overflow-x: hidden;
+    height: 100%;
 }
 
 .container{
@@ -146,7 +147,7 @@ span{
 
 .fa-bars,
 .fa-x{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.3rem;
 
 }

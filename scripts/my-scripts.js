@@ -1,8 +1,9 @@
 function showMenu(){
+
+    var x = document.getElementById("menu-btn");
+    if (x.id == "menu-btn" ){
     document.getElementById("menu").style.width = "260px";
-    var element = document.getElementById("menu-btn");
-    element.classList.toggle("fa-x");
-}
-function closeMenu(){
-    document.getElementById("menu").style.width = "0";
+    } else {
+
+    }
 }
