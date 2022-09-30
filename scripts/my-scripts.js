@@ -1,9 +1,14 @@
 function showMenu(){
+    var menu = document.getElementById("menu");
 
-    var x = document.getElementById("menu-btn");
-    if (x.id == "menu-btn" ){
-    document.getElementById("menu").style.width = "260px";
-    } else {
-
-    }
+    if (menu.style.width == 0){
+        menu.style.width = "260px";
+    } else{
+        menu.style.width = 0;
+    } 
 }
+
+// ("#menu-btn").click(function(){
+//     $("#menu").animate(1000);
+// });
+
