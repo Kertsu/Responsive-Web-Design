@@ -15,6 +15,6 @@
 $(document).ready(function(){
         $('.button').click(function(){
             $('.menu-div').toggleClass('animate');
-
+            $('.fas').toggleClass('xbutton');
         });
     });

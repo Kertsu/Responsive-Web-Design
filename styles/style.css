@@ -152,6 +152,10 @@ h1{
     font-size: 1.3rem;
 }
 
+.fas.xbutton:before{
+    content: '\f00d';
+    font-size: 1.6rem;
+}
 
 /* Media Queries */
 
