@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script
       src="https://kit.fontawesome.com/3cf5053bc7.js"
       crossorigin="anonymous"
@@ -16,7 +17,7 @@
     <header id="header" class="header-scrolled">
       <div class="container container-nav">
         <div class="site-title">
-          <h1><span>K</span>urtd <span>D</span>aniel</h1>
+          <h1><span class="kd">K</span>urtd <span>D</span>aniel</h1>
         </div>
         <nav>
           <ul class="nav-wide">
@@ -33,10 +34,10 @@
     <main>
       <div class="container-m"></div>
     </main>
-    <button class="menu-btn btn-bars" onclick="showMenu()"><i id="menu-btn" class="fas fa-bars"></i></button>
+    <div class="button menu-btn btn-bars"><span id="menu-btn" class="fas fa-bars"></span></div>
 
     </a>
-    <div id="menu">
+    <div id="menu" class="menu-div">
       <nav class="mobile-nav">
         <ul class="mobile-nav-ul">
           <li><a class="mobile-nav-a" href="">Home</a></li>
