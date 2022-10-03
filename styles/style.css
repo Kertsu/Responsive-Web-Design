@@ -91,6 +91,9 @@ header{
 }
 
 /* buttons */
+.brand-name{
+    text-decoration: none;
+}
 
 .menu-btn{
     display: none;

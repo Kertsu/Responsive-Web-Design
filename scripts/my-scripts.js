@@ -5,8 +5,8 @@ $(document).ready(function(){
         });
     });
 
-$(document).ready(function(){
-    $('.brand-name').click(function(){
-        window.location.href = 'index.html'
-    });
-});  
+// $(document).ready(function(){
+//     $('.brand-name').click(function(){
+//         window.location.href = 'index.html'
+//     });
+// });  
