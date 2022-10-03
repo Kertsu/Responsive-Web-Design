@@ -103,6 +103,10 @@ button a{
     text-decoration: none;
 }
 
+.btn-bars{
+    display: none;
+}
+
 /* footer */
 .container-f{
     background-color: #143774;
@@ -154,7 +158,7 @@ h1{
 
 .fas.xbutton:before{
     content: '\f00d';
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 /* Media Queries */
