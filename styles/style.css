@@ -6,6 +6,10 @@ color:#707070;
 color:#8490ff;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 /* Layout */
 body{
     font-family: Ubuntu, sans-serif;
@@ -133,21 +137,15 @@ h1{
     font-size: 1rem;
     color: #707070;
     font-weight: 700;
+    text-decoration: none;
+
 }
 
 .nav-btns:hover,
 .nav-btns:focus{
-    color: #1792d2;
-    transition: .5s;
-}
-
-.nav-btns{
-    text-decoration: none;
-}
-
-.nav-btns:hover{
     border-bottom: #1792d2 1px solid;
-    transition: .2s;
+    color: #1792d2;
+    transition: all ease .2s;
 }
 
 .kd{
