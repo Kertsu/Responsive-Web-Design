@@ -133,10 +133,6 @@ body{
     cursor: pointer;
 }
 
-button a{
-    text-decoration: none;
-}
-
 .btn-bars{
     display: none;
 }
@@ -193,12 +189,7 @@ h1{
     content: '\f00d';
 }
 
-
 /* DARK MODE */
-
-.header.dm:after{
-    background-color: black;
-}
 
 /* Media Queries */
 
@@ -213,7 +204,4 @@ h1{
         position: fixed;
         right: 25px;
     }
-
-
-
 }
