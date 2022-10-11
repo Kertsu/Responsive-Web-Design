@@ -191,7 +191,6 @@ h1{
 
 .fas.xbutton::before{
     content: '\f00d';
-    z-index: 4;
 }
 
 
