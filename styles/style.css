@@ -55,7 +55,7 @@ body{
     align-items: center;
 }
 
-header{
+.header{
     background-color: white;
     max-width: 100%;
     padding: 0;
@@ -150,7 +150,6 @@ button a{
 .fa-moon{
     cursor: pointer;
     color: #707070;
-
 }
 
 /* Typography */
@@ -186,15 +185,21 @@ h1{
 }
 
 
-.fas.light:before{
+.fas.light::before{
     content: '\f185';
 }
 
-.fas.xbutton:before{
+.fas.xbutton::before{
     content: '\f00d';
+    z-index: 4;
 }
 
 
+/* DARK MODE */
+
+.header.dm:after{
+    background-color: black;
+}
 
 /* Media Queries */
 

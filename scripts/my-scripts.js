@@ -25,7 +25,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#mobile-body-overly').click(function(){
-        $('.menu-div').css('width','0')
+        $('.menu-div').removeClass('animate');
+        $('.fas').removeClass('xbutton');
         $('#mobile-body-overly').css('display','none');
         $('html').css('overflow','visible');
     })
