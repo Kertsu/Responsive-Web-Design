@@ -2,6 +2,8 @@ $(document).ready(function(){
         $('.button').click(function(){
             $('.menu-div').toggleClass('animate');
             $('.fas').toggleClass('xbutton');
+            $('#mobile-body-overly').css('display','block');
+            $('html').css('overflow','hidden');
         });
     });
 
@@ -21,3 +23,10 @@ $(document).ready(function(){
     });
     });
 
+$(document).ready(function(){
+    $('#mobile-body-overly').click(function(){
+        $('.menu-div').css('width','0')
+        $('#mobile-body-overly').css('display','none');
+        $('html').css('overflow','visible');
+    })
+});
