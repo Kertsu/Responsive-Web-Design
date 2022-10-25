@@ -177,14 +177,13 @@ body{
 .container-f p {
     font-family: Lora, serif;
     font-size: 1.125rem;
-    margin: 0.25rem;
+    margin: 0.75rem;
 }
 
 .container-f span{
     font-weight: 400;
     font-family: Lora, serif;
     font-size: 1.5rem;
-    letter-spacing: .15em;
     cursor: pointer;
 }
 
