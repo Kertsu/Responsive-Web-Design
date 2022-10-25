@@ -4,6 +4,9 @@ color:#1792d2;
 color:#f8f8f8;
 color:#707070;
 color:#8490ff;
+
+/* dark mode */
+background-color : #213343;
 }
 
 *{
@@ -161,19 +164,41 @@ body{
 
 /* footer */
 .container-f{
-    background-color: #213343;
+    background-color: #f8f8f8;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    color: rgb(54, 48, 48);
+    max-width: 100%;
 }
+
+.container-f p {
+    font-family: Lora, serif;
+    font-size: 1.125rem;
+    margin: 0.25rem;
+}
+
+.container-f span{
+    font-weight: 400;
+    font-family: Lora, serif;
+    font-size: 1.5rem;
+    letter-spacing: .15em;
+    cursor: pointer;
+}
+
 
 .footer-links{
     display: flex;
     gap: 3em;
     padding-left: 0px;
+    max-width: 100%;
 }
 
 .footer-links i {
-    font-size: 2rem;
-    color: white;
+    font-size: 2.5rem;
+    color: rgb(54, 48, 48);
 }
 
 .nav-f{
@@ -244,5 +269,23 @@ h1{
         top: 25px;
         position: fixed;
         right: 25px;
+    }
+}
+
+@media (max-width:340px) {
+    .footer-links i {
+        font-size: 2rem;
+        }
+    .container-f p{
+        text-align: center;
+        padding: 1.125rem 0;
+    }
+
+    .menu-div.animate{
+        width: 230px;
+    }
+
+    .footer-links{
+        gap: 2em;
     }
 }
