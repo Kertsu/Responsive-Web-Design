@@ -10,6 +10,15 @@ color:#8490ff;
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style:none;
+}
+
 /* Layout */
 body{
     font-family: Ubuntu, sans-serif;
@@ -40,15 +49,28 @@ body{
     margin: 0 auto;
 }
 
+/* MAIN START */
+
 .container-m{
-    height: 1000px;
-    background: beige;
+    border:1px solid magenta;
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
 }
 
-.container-n{
-    height: 1000px;
-    background: wheat;
+
+.col{
+    width: 45%;
+    border: 1px solid blue;
+    align-items: center;
+    text-align: center;
 }
+
+
+/* MAIN END */
 
 .container-nav{
     display: flex;
@@ -139,8 +161,26 @@ body{
 
 /* footer */
 .container-f{
-    background-color: #143774;
-    margin: 0;
+    background-color: #213343;
+    display: flex;
+}
+
+.footer-links{
+    display: flex;
+    gap: 3em;
+}
+
+.footer-links i {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-f{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa-moon{
