@@ -168,6 +168,7 @@ body{
 .footer-links{
     display: flex;
     gap: 3em;
+    padding-left: 0px;
 }
 
 .footer-links i {
