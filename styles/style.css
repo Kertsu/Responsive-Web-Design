@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
 head{
 color:#143774;
 color:#1792d2;
@@ -24,14 +26,17 @@ ul{
 
 /* Layout */
 body{
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
     overflow-x: hidden;
+    overflow-y: hidden;
     height: 100%;
 }
-
+::selection{
+    background: #1792d2 ;
+}
 #mobile-body-overly{
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -53,24 +58,6 @@ body{
 }
 
 /* MAIN START */
-
-.container-m{
-    border:1px solid magenta;
-    width: 90%;
-    max-width: 100%;
-    display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
-    justify-content: center;
-}
-
-
-.col{
-    width: 45%;
-    border: 1px solid blue;
-    align-items: center;
-    text-align: center;
-}
 
 
 /* MAIN END */
@@ -164,7 +151,7 @@ body{
 
 /* footer */
 .container-f{
-    background-color: #f8f8f8;
+    background-color: #f8f8f88e;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,11 +167,11 @@ body{
     margin: 0.75rem;
 }
 
-.container-f span{
+.container-f h3{
     font-weight: 400;
     font-family: Lora, serif;
     font-size: 1.5rem;
-    cursor: pointer;
+    margin: 0;
 }
 
 
@@ -198,6 +185,12 @@ body{
 .footer-links i {
     font-size: 2.5rem;
     color: rgb(54, 48, 48);
+    transition: all .3s;
+}
+
+.footer-links i:hover{
+    transform: scale(1.2);
+    color: black;
 }
 
 .nav-f{
@@ -215,7 +208,7 @@ body{
 
 /* Typography */
 
-h1{
+.brand-name > h1{
     font-weight: 300;
     font-family: Lora, serif;
     font-size: 1.5rem;
@@ -259,6 +252,9 @@ h1{
 /* Media Queries */
 
 @media (max-width:865px) {
+    body{
+    overflow-y: scroll;
+    }
     .nav-wide {
         display: none;
     }
@@ -284,10 +280,20 @@ h1{
         padding: 1.125rem 0;
     }
 
+
     .menu-div.animate{
         width: 230px;
     }
     .footer-links{
         gap: 1.25em;
+    }
+}
+
+@media (max-width: 320px){
+    .container-f > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
